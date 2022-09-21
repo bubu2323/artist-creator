@@ -1,0 +1,68 @@
+:root {
+  --lightgrey: #c1bdba;
+  --darkgrey: hsla(0, 0%, 0%, 0.687);
+  --darkblue: #192f41;
+  --white: #ffffff;
+  --ligthgreen: #1ab188;
+}
+body {
+  background-color: rgb(235, 227, 227);
+}
+#title {
+  color: var(--ligthgreen);
+}
+.bc {
+  background-color: var(--darkgrey);
+  color: var(--white);
+}
+option {
+  background-color: var(--lightgrey);
+  color: var(--darkblue);
+}
+.button {
+  background-color: var(--ligthgreen);
+  color: var(--darkblue);
+  border: 1px solid transparent;
+}
+.button:hover {
+  background-color: var(--darkblue);
+  border: 1px solid transparent;
+  color: var(--lightgrey);
+  transition: 0.5s;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid var(--lightgrey);
+  background-color: transparent;
+  font-size: large;
+  padding: 0.3em;
+  color: var(--lightgrey);
+  margin-bottom: 1.5em;
+  border-radius: 5px;
+  width: 25em;
+  margin: 0 auto;
+}
+label {
+  margin-bottom: 0.5em;
+}
+.colFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+textarea {
+  width: 25em;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  textarea {
+    width: 35em;
+  }
+}
